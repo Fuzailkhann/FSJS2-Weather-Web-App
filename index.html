@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Weather Web App</h1>
+        <form onsubmit="getData(event)" class="searchData" action="">
+            <input id="inputBox" type="text" name="" placeholder="Enter a city Name">
+            <button class="btn" >Search</button>
+        </form>
+    
+
+    <section  class="cityWeatherData">
+        <!-- displaying the country details -->
+        <div class="countryDetails details">
+            <!--display country name  -->
+            <div class="card">
+                <p>Country Name</p>
+                <p id="countryName">__</p>
+            </div>
+            <!-- displying state name  -->
+            <div class="card">
+                <p>State Name</p>
+                <p id="stateName">__</p>
+            </div>
+            <!-- displying the city name -->
+            <div class="card">
+                <p>City Name</p>
+                <p id="cityName">__</p>
+            </div>
+
+        </div>
+        <!-- displaying the weather status -->
+        <div class="weatherDetails details">
+            <div class="card">
+                <p>humidity</p>
+                <p id="humidity">__</p>
+
+            </div>
+            <!-- wind speed -->
+            <div class="card">
+                <p>wind speed</p>
+                <p><span id="windspeed">__</span>KMPH</p>
+            </div>
+            <!-- temperature -->
+            <div class="card">
+                <p>Temperature</p>
+                <p><span id="temperature">__</span>&#8451;</p>
+            </div>
+
+            <!-- displaying weather condition -->
+            <div>
+                <img width="20px" id="logoImage" src="" alt="">
+                <p id="weatherstatus">___</p>
+            </div>
+
+        </div>
+
+    </section>
+    </div>
+    <script src="./script.js"></script>
+    
+    
+</body>
+</html>
